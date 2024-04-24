@@ -12,8 +12,8 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   // URL for the POST and GET requests
-  const postUrl = 'https://msdocs-serverless-function-178982298.azurewebsites.net/api/dbocountvisitorsInsert?code=LmiNukLHRcC0QFn7NxXHxHUq4-KDyAh3w5GcN-nyH7t6AzFuKbPbTA==';
-  const getUrl = 'https://msdocs-serverless-function-178982298.azurewebsites.net/api/dbocountvisitors?code=JHj8hKOGjaYSYyjoUX1jvAKxLrnKmtopczU3tJKvs3unAzFu9mKaQA==';
+  const postUrl = 'https://msdocs-serverless-function-178982298.azurewebsites.net/api/dbocountvisitorsInsert?code=' + process.env.INSERT_CODE;
+  const getUrl = 'https://msdocs-serverless-function-178982298.azurewebsites.net/api/dbocountvisitors?code=' + process.env.GET_CODE;
 
   // Function to make a POST request to increment visitor count
   function incrementVisitorCount() {
