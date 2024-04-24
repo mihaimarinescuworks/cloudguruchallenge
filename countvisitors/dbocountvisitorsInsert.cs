@@ -29,6 +29,7 @@ namespace Company.Function
             // Create a new ToDoItem with auto-generated ID and visitor count
             ToDoItem todoItem = new ToDoItem
             {
+                id = visitorCount,
                 visitor_name = visitorCount // Random visitor count
             };
 
@@ -42,7 +43,7 @@ namespace Company.Function
 
     public class ToDoItem
     {
-        public string id { get; set; } // Auto-generated ID
+        public int id { get; set; } // Auto-generated ID
         public int visitor_name { get; set; } // Random visitor count
     }
 }
