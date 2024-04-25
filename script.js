@@ -54,6 +54,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Start the process by incrementing the visitor count
   incrementVisitorCount();
-  // Update the visitor count on the webpage
-  document.getElementById('visitor-count').textContent = visitorCount + 'th';
 });
